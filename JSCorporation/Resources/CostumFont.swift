@@ -11,8 +11,7 @@ import UIKit
 
 //MARK: Размеры и типы шрифта
 extension UIFont {
-/*
-     Шрифт:
-     GothamPro (семейство)
- */
+    static let fontSideMenu = UIFont(name: "PingFang TC", size: 22) //Названия ячеек в выдвижном меню
+    static let labelSize = UIFont(name: "PingFang TC", size: 32) //Название лейблов
+    static let btnSize = UIFont(name: "PingFang TC", size: 19) //Название кнопок
 }

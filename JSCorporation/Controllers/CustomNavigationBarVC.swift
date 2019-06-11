@@ -1,15 +1,14 @@
 //
-//  InnovatorsVC.swift
+//  CustomNavigationBarVC.swift
 //  JSCorporation
 //
-//  Created by Борис Павлов on 03/06/2019.
+//  Created by Борис Павлов on 10/06/2019.
 //  Copyright © 2019 Boris. All rights reserved.
 //
 
 import UIKit
 
-//MARK: Новаторы
-class InnovatorsVC: UIViewController {
+class CustomNavigationBarVC: UIViewController {
 
     //MARK: Properties
     private let customNavigationBar: UIView = {
@@ -57,7 +56,6 @@ class InnovatorsVC: UIViewController {
         self.customNavigationBar.addSubview(menuImg)
         
         anchorConstraint()
-        customView()
         tappedIsImg()
         
     }
@@ -73,17 +71,10 @@ class InnovatorsVC: UIViewController {
         self.pushMenu.isUserInteractionEnabled = true
     }
     
-    private func customView() {
-        self.view.backgroundColor = UIColor.white
-    }
-    
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
-    
     //MARK: Objc Methods
     @objc func tappedIsMenu(_ sender: AnyObject) {
-        print("press button image menu")
+        let vc = MenuVC()
+        self.present(vc, animated: true, completion: nil)
     }
     
     @objc func tappedIsPushMenu(_ sender: AnyObject) {
@@ -116,7 +107,5 @@ class InnovatorsVC: UIViewController {
         self.pushMenu.widthAnchor.constraint(equalToConstant: 30).isActive = true
         self.pushMenu.trailingAnchor.constraint(equalTo: self.menuImg.leadingAnchor, constant: -12).isActive = true
         self.pushMenu.bottomAnchor.constraint(equalTo: self.customNavigationBar.bottomAnchor, constant: -22).isActive = true
-        
     }
-
 }

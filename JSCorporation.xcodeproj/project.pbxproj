@@ -30,6 +30,7 @@
 		890F36EB22A2F7BF00EB1EAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 890F36EA22A2F7BF00EB1EAE /* Assets.xcassets */; };
 		890F36EE22A2F7BF00EB1EAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890F36EC22A2F7BF00EB1EAE /* LaunchScreen.storyboard */; };
 		8919EFD422A99D3F001CAD8D /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919EFD322A99D3F001CAD8D /* MenuModel.swift */; };
+		892506BA22AEA69E00D32D00 /* CustomNavigationBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892506B922AEA69E00D32D00 /* CustomNavigationBarVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		890F36ED22A2F7BF00EB1EAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		890F36EF22A2F7BF00EB1EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8919EFD322A99D3F001CAD8D /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuModel.swift; path = ../../MenuModel.swift; sourceTree = "<group>"; };
+		892506B922AEA69E00D32D00 /* CustomNavigationBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBarVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				890E9C2922A5B1F700CC7BA4 /* CuratorsVC.swift */,
 				890E9C2B22A5B20300CC7BA4 /* MentorsVC.swift */,
 				890E9C2D22A5B21300CC7BA4 /* ApplicationsVC.swift */,
+				892506B922AEA69E00D32D00 /* CustomNavigationBarVC.swift */,
 				8919EFD722A99D8F001CAD8D /* Models */,
 			);
 			path = Controllers;
@@ -135,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				890E9C3522A5B28400CC7BA4 /* App */,
+				8995897D22ABE10A00785561 /* NetworkService */,
 				890E9C3322A5B23E00CC7BA4 /* Controllers */,
 				890E9C3422A5B26900CC7BA4 /* Resources */,
 				890F36EF22A2F7BF00EB1EAE /* Info.plist */,
@@ -148,6 +152,13 @@
 				8919EFD322A99D3F001CAD8D /* MenuModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		8995897D22ABE10A00785561 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +248,7 @@
 				890E9C1A22A5B15600CC7BA4 /* MyProfileVC.swift in Sources */,
 				890E9C1622A5B13600CC7BA4 /* RecoveryPasswordWinVC.swift in Sources */,
 				890F36E422A2F7BC00EB1EAE /* AppDelegate.swift in Sources */,
+				892506BA22AEA69E00D32D00 /* CustomNavigationBarVC.swift in Sources */,
 				8919EFD422A99D3F001CAD8D /* MenuModel.swift in Sources */,
 				890E9C3022A5B22800CC7BA4 /* CostumColor.swift in Sources */,
 				890E9C1422A5B12200CC7BA4 /* RecoveryPasswordVC.swift in Sources */,

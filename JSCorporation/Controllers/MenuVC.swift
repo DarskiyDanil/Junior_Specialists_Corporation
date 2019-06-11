@@ -64,6 +64,7 @@ class MenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIGe
         self.customNavigationBar.addSubview(menuImg)
         self.view.addSubview(menuTable)
         
+        //other methods
         anchorConstraint()
         customView()
         editTableView()
@@ -98,7 +99,19 @@ class MenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIGe
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("cell = \(indexPath)")
+        switch indexPath.count {
+        case 0:
+            let vc = MyProfileVC()
+            self.present(vc, animated: true, completion: nil)
+        case 1:
+            let vc = MyProjectVC()
+            self.present(vc, animated: true, completion: nil)
+        case 2:
+            let vc = MyDocumentsVC()
+            self.present(vc, animated: true, completion: nil)
+        default:
+            break
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -179,7 +192,6 @@ class MenuCell: UITableViewCell {
         iv.translatesAutoresizingMaskIntoConstraints = false
         iv.contentMode = .scaleAspectFit
         iv.clipsToBounds = true
-        
         return iv
     }()
     
@@ -187,8 +199,7 @@ class MenuCell: UITableViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Кастомный текст"
-        label.font = UIFont.systemFont(ofSize: 22)
-        label.font = UIFont(name: "PingFang TC", size: 22)
+        label.font = UIFont.fontSideMenu
         label.textColor = .white
         return label
     }()

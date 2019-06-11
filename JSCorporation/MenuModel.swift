@@ -17,9 +17,9 @@ enum MenuModel: Int, CustomStringConvertible {
     
     var description: String {
         switch self {
-        case .MyProfile: return "My profile"
-        case .MyProjects: return "My projects"
-        case .MyDocuments: return "My documents"
+        case .MyProfile: return "Мой профиль"
+        case .MyProjects: return "Мои проекты"
+        case .MyDocuments: return "Мои документы"
             
         }
     }
