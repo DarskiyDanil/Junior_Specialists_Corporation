@@ -77,7 +77,11 @@ class CustomNavigationBarVC: UIViewController {
     }
     
     @objc func tappedIsPushMenu(_ sender: AnyObject) {
-        print("press button image push menu")
+        let alertController = UIAlertController(title: "Внимание!", message: "Раздел 'Уведомления' находится в разработке.", preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        
+        alertController.addAction(alertAction)
+        self.present(alertController, animated: true, completion: nil)
     }
     
     //MARK: Constrains

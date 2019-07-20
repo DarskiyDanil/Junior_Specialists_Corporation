@@ -10,6 +10,7 @@ import UIKit
 
 class EntranceWindowVC: UIViewController {
 
+    //MARK: Properties
     private let viewEntrance: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -27,16 +28,16 @@ class EntranceWindowVC: UIViewController {
         lbl.translatesAutoresizingMaskIntoConstraints = false
         lbl.text = "Вход"
         lbl.textColor = UIColor.cyanCustom
-        lbl.font = UIFont.labelF22
-        lbl.font = UIFont.labelF28B
+        lbl.font = UIFont.customFont22
+        lbl.font = UIFont.customBold28
         return lbl
     }()
     
     private let entranceButton: UIButton = {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.titleLabel?.font = UIFont.buttonF22
-        btn.titleLabel?.font = UIFont.labelF22B
+        btn.titleLabel?.font = UIFont.customFont22
+        btn.titleLabel?.font = UIFont.customBold22
         btn.setTitle("Войти", for: .normal)
         btn.setTitleColor(UIColor.snowCustom, for: .normal)
         btn.backgroundColor = UIColor.cyanCustom
@@ -48,7 +49,7 @@ class EntranceWindowVC: UIViewController {
     private let passwordButton: UIButton = {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.titleLabel?.font = UIFont.buttonF19
+        btn.titleLabel?.font = UIFont.customFont19
         btn.setTitle("Забыли пароль?", for: .normal)
         btn.setTitleColor(UIColor.cyanCustom, for: .normal)
         btn.backgroundColor = UIColor.snowCustom
@@ -60,7 +61,7 @@ class EntranceWindowVC: UIViewController {
     private let registrationButton: UIButton = {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.titleLabel?.font = UIFont.labelF19
+        btn.titleLabel?.font = UIFont.customFont19
         btn.setTitle("Регистрация", for: .normal)
         btn.setTitleColor(UIColor.cyanCustom, for: .normal)
         btn.backgroundColor = UIColor.snowCustom
@@ -73,7 +74,7 @@ class EntranceWindowVC: UIViewController {
         let txf = UITextField()
         txf.translatesAutoresizingMaskIntoConstraints = false
         txf.placeholder = "Email"
-        txf.font = UIFont.labelF22
+        txf.font = UIFont.customFont22
         txf.layer.cornerRadius = 5
         txf.borderStyle = UITextField.BorderStyle.roundedRect
         return txf
@@ -83,7 +84,7 @@ class EntranceWindowVC: UIViewController {
         let txf = UITextField()
         txf.translatesAutoresizingMaskIntoConstraints = false
         txf.placeholder = "Пароль"
-        txf.font = UIFont.labelF22
+        txf.font = UIFont.customFont22
         txf.layer.cornerRadius = 5
         txf.borderStyle = UITextField.BorderStyle.roundedRect
         return txf
@@ -94,7 +95,7 @@ class EntranceWindowVC: UIViewController {
         lbl.translatesAutoresizingMaskIntoConstraints = false
         lbl.text = "|"
         lbl.textColor = UIColor.black
-        lbl.font = UIFont.labelF22
+        lbl.font = UIFont.customFont22
         return lbl
     }()
 

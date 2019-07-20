@@ -10,7 +10,7 @@ import UIKit
 
 class ProfileSkillsVC: UIViewController {
 
-    //Properties
+    //MARK: Properties
     private let profileSkillsLabel: UILabel = {
         let lbl = UILabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
@@ -108,6 +108,7 @@ class ProfileSkillsVC: UIViewController {
         super.viewDidLoad()
         
         //view
+        self.view.frame = CGRect(x: 0, y: 0, width: 0, height: 0)
         self.view.addSubview(profileSkillsLabel)
         self.view.addSubview(webDesignFirst)
         self.view.addSubview(webDesignSecond)

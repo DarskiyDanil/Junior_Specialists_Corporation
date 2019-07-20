@@ -1,26 +1,16 @@
 //
-//  RecoveryPasswordVC.swift
+//  RecoveryPasswordWindowVC.swift
 //  JSCorporation
 //
-//  Created by Борис Павлов on 03/06/2019.
+//  Created by Борис Павлов on 07/07/2019.
 //  Copyright © 2019 Boris. All rights reserved.
 //
 
 import UIKit
 
-//MARK: Восстановление пароля
-class RecoveryPasswordVC: UIViewController, UIGestureRecognizerDelegate {
+class RecoveryPasswordWindowVC: UIViewController {
 
-    //Properties
-    private let logoDog: UIImageView = {
-        var img = UIImageView()
-        img.translatesAutoresizingMaskIntoConstraints = false
-        img.contentMode = .scaleAspectFit
-        let image = UIImage(named: "DogLogo")
-        img.image = image
-        return img
-    }()
-    
+    //MARK: Properties
     private let recoveryPasswordView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -33,22 +23,13 @@ class RecoveryPasswordVC: UIViewController, UIGestureRecognizerDelegate {
         return view
     }()
     
-    private let logoJSGrey: UIImageView = {
-        var img = UIImageView()
-        img.translatesAutoresizingMaskIntoConstraints = false
-        img.contentMode = .scaleAspectFit
-        let image = UIImage(named: "JScorplogos1grey")
-        img.image = image
-        return img
-    }()
-    
     private let recoveryPasswordLabel: UILabel = {
         let lbl = UILabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
         lbl.text = "Восстановление пароля"
         lbl.textColor = UIColor.cyanCustom
-        lbl.font = UIFont.btnSize
-        lbl.font = UIFont.boldSystemFont(ofSize: 18)
+        lbl.font = UIFont.customFont19
+        lbl.font = UIFont.customBold18
         return lbl
     }()
     
@@ -56,7 +37,7 @@ class RecoveryPasswordVC: UIViewController, UIGestureRecognizerDelegate {
         let txf = UITextField()
         txf.translatesAutoresizingMaskIntoConstraints = false
         txf.placeholder = "Email"
-        txf.font = UIFont.fontSideMenu
+        txf.font = UIFont.customFont22
         txf.layer.cornerRadius = 5
         txf.borderStyle = UITextField.BorderStyle.roundedRect
         return txf
@@ -65,8 +46,8 @@ class RecoveryPasswordVC: UIViewController, UIGestureRecognizerDelegate {
     private let toSendALatter: UIButton = {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.titleLabel?.font = UIFont.btnSize
-        btn.titleLabel?.font = UIFont.boldSystemFont(ofSize: 19)
+        btn.titleLabel?.font = UIFont.customFont19
+        btn.titleLabel?.font = UIFont.customBold19
         btn.setTitle("Отправить письмо", for: .normal)
         btn.setTitleColor(UIColor.snowCustom, for: .normal)
         btn.backgroundColor = UIColor.cyanCustom
@@ -78,8 +59,8 @@ class RecoveryPasswordVC: UIViewController, UIGestureRecognizerDelegate {
     private let didNotReceiveTheLetter: UIButton = {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.titleLabel?.font = UIFont.btnSize
-        btn.titleLabel?.font = UIFont.boldSystemFont(ofSize: 19)
+        btn.titleLabel?.font = UIFont.customFont19
+        btn.titleLabel?.font = UIFont.customBold19
         btn.setTitle("Не пришло письмо?", for: .normal)
         btn.setTitleColor(UIColor.cyanCustom, for: .normal)
         btn.backgroundColor = UIColor.snowCustom
@@ -93,9 +74,7 @@ class RecoveryPasswordVC: UIViewController, UIGestureRecognizerDelegate {
         super.viewDidLoad()
         
         //view
-        self.view.addSubview(logoDog)
         self.view.addSubview(recoveryPasswordView)
-        self.view.addSubview(logoJSGrey)
         
         //recoveryPasswordView
         self.recoveryPasswordView.addSubview(recoveryPasswordLabel)
@@ -105,27 +84,16 @@ class RecoveryPasswordVC: UIViewController, UIGestureRecognizerDelegate {
         
         //other methods
         anchorConstraint()
-        tappedIsImage()
     }
     
     //MARK: Methods
-    private func tappedIsImage() {
-        let tap = UITapGestureRecognizer(target: self, action: #selector(tappedIsImg(_:)))
-        self.logoJSGrey.addGestureRecognizer(tap)
-        self.logoJSGrey.isUserInteractionEnabled = true
-    }
     
     //MARK: Objc methods
-    @objc func tappedIsImg(_ sender: AnyObject) {
-        let vc = EntranceVC()
-        self.present(vc, animated: true, completion: nil)
-    }
-    
     @objc func tappedIsBtn(_ sender: UIButton) {
+        //на время теста приложения
         switch sender.titleLabel?.text {
         case "Отправить письмо":
             print("Письмо отправлено")
-            //на время теста приложения
             let vc = RecoveryPasswordWinVC()
             self.present(vc, animated: true, completion: nil)
         case "Не пришло письмо?":
@@ -138,23 +106,11 @@ class RecoveryPasswordVC: UIViewController, UIGestureRecognizerDelegate {
     //MARK: Constrains
     private func anchorConstraint() {
         
-        //Logotype dog
-        self.logoDog.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-        self.logoDog.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 100).isActive = true
-        self.logoDog.widthAnchor.constraint(equalToConstant: 260).isActive = true
-        self.logoDog.heightAnchor.constraint(equalToConstant: 200).isActive = true
-        
         //recoveryPasswordView
         self.recoveryPasswordView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         self.recoveryPasswordView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
         self.recoveryPasswordView.widthAnchor.constraint(equalToConstant: 360).isActive = true
         self.recoveryPasswordView.heightAnchor.constraint(equalToConstant: 300).isActive = true
-        
-        //logo JS Grey
-        self.logoJSGrey.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-        self.logoJSGrey.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -5).isActive = true
-        self.logoJSGrey.widthAnchor.constraint(equalToConstant: 200).isActive = true
-        self.logoJSGrey.heightAnchor.constraint(equalToConstant: 100).isActive = true
         
         //Recovery Password Label
         self.recoveryPasswordLabel.topAnchor.constraint(equalTo: self.recoveryPasswordView.topAnchor, constant: 10).isActive = true

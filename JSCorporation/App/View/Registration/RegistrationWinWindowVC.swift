@@ -1,26 +1,16 @@
 //
-//  RegistrationWinVC.swift
+//  RegistrationWinWindowVC.swift
 //  JSCorporation
 //
-//  Created by Борис Павлов on 03/06/2019.
+//  Created by Борис Павлов on 07/07/2019.
 //  Copyright © 2019 Boris. All rights reserved.
 //
 
 import UIKit
 
-//MARK: Регистрация завершена
-class RegistrationWinVC: UIViewController, UIGestureRecognizerDelegate {
-
-    //Properties
-    private let logoPostman: UIImageView = {
-        var img = UIImageView()
-        img.translatesAutoresizingMaskIntoConstraints = false
-        img.contentMode = .scaleAspectFit
-        let image = UIImage(named: "PostmanLogo")
-        img.image = image
-        return img
-    }()
+class RegistrationWinWindowVC: UIViewController {
     
+    //MARK: Properties
     private let registrationWinView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -33,22 +23,13 @@ class RegistrationWinVC: UIViewController, UIGestureRecognizerDelegate {
         return view
     }()
     
-    private let logoJSGrey: UIImageView = {
-        var img = UIImageView()
-        img.translatesAutoresizingMaskIntoConstraints = false
-        img.contentMode = .scaleAspectFit
-        let image = UIImage(named: "JScorplogos1grey")
-        img.image = image
-        return img
-    }()
-   
     private let welcomJSCorpLabel: UILabel = {
         let lbl = UILabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
         lbl.text = "Добро пожаловать в JS Corp!"
         lbl.textColor = UIColor.cyanCustom
-        lbl.font = UIFont.btnSize
-        lbl.font = UIFont.boldSystemFont(ofSize: 18)
+        lbl.font = UIFont.customFont19
+        lbl.font = UIFont.customBold18
         return lbl
     }()
     
@@ -60,15 +41,15 @@ class RegistrationWinVC: UIViewController, UIGestureRecognizerDelegate {
         lbl.textAlignment = NSTextAlignment.center
         lbl.lineBreakMode = NSLineBreakMode.byWordWrapping
         lbl.textColor = UIColor.smokeCustom
-        lbl.font = UIFont(name: "PingFang TC", size: 17)
+        lbl.font = UIFont.customFont17
         return lbl
     }()
     
     private let registrationWinButton: UIButton = {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.titleLabel?.font = UIFont.btnSize
-        btn.titleLabel?.font = UIFont.boldSystemFont(ofSize: 19)
+        btn.titleLabel?.font = UIFont.customFont19
+        btn.titleLabel?.font = UIFont.customBold19
         btn.setTitle("Войти в личный кабинет", for: .normal)
         btn.setTitleColor(UIColor.snowCustom, for: .normal)
         btn.backgroundColor = UIColor.cyanCustom
@@ -80,8 +61,8 @@ class RegistrationWinVC: UIViewController, UIGestureRecognizerDelegate {
     private let goBackToTheMainPage: UIButton = {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.titleLabel?.font = UIFont.btnSize
-        btn.titleLabel?.font = UIFont.boldSystemFont(ofSize: 19)
+        btn.titleLabel?.font = UIFont.customFont19
+        btn.titleLabel?.font = UIFont.customBold19
         btn.setTitle("Вернуться на главную", for: .normal)
         btn.setTitleColor(UIColor.snowCustom, for: .normal)
         btn.backgroundColor = UIColor.grayCustom
@@ -95,10 +76,8 @@ class RegistrationWinVC: UIViewController, UIGestureRecognizerDelegate {
         super.viewDidLoad()
         
         //view
-        self.view.addSubview(logoPostman)
         self.view.addSubview(registrationWinView)
-        self.view.addSubview(logoJSGrey)
-       
+        
         //registrationWinView
         self.registrationWinView.addSubview(welcomJSCorpLabel)
         self.registrationWinView.addSubview(welcomTextLabel)
@@ -107,22 +86,11 @@ class RegistrationWinVC: UIViewController, UIGestureRecognizerDelegate {
         
         //other methods
         anchorConstraint()
-        tappedIsImage()
     }
     
     //MARK: Methods
-    private func tappedIsImage() {
-        let tap = UITapGestureRecognizer(target: self, action: #selector(tappedIsImg(_:)))
-        self.logoJSGrey.addGestureRecognizer(tap)
-        self.logoJSGrey.isUserInteractionEnabled = true
-    }
     
     //MARK: Objc methods
-    @objc func tappedIsImg(_ sender: AnyObject) {
-        let vc = EntranceVC()
-        self.present(vc, animated: true, completion: nil)
-    }
-    
     @objc func tappedIsBtn(_ sender: UIButton) {
         switch sender.titleLabel?.text {
         case "Войти в личный кабинет":
@@ -139,23 +107,11 @@ class RegistrationWinVC: UIViewController, UIGestureRecognizerDelegate {
     //MARK: Constrains
     private func anchorConstraint() {
         
-        //Logo Postman
-        self.logoPostman.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-        self.logoPostman.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 100).isActive = true
-        self.logoPostman.widthAnchor.constraint(equalToConstant: 260).isActive = true
-        self.logoPostman.heightAnchor.constraint(equalToConstant: 200).isActive = true
-        
         //Registration Win View
         self.registrationWinView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         self.registrationWinView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
         self.registrationWinView.widthAnchor.constraint(equalToConstant: 360).isActive = true
         self.registrationWinView.heightAnchor.constraint(equalToConstant: 300).isActive = true
-        
-        //Logo JS Grey
-        self.logoJSGrey.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-        self.logoJSGrey.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -5).isActive = true
-        self.logoJSGrey.widthAnchor.constraint(equalToConstant: 200).isActive = true
-        self.logoJSGrey.heightAnchor.constraint(equalToConstant: 100).isActive = true
         
         //Welcom JSCorp Label
         self.welcomJSCorpLabel.centerXAnchor.constraint(equalTo: self.registrationWinView.centerXAnchor).isActive = true

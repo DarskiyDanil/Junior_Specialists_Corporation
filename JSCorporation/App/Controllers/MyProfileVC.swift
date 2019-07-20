@@ -96,6 +96,7 @@ class MyProfileVC: UIViewController {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.setTitle("Редактировать профиль", for: .normal)
+        btn.titleLabel?.font = UIFont.customFont15
         btn.setTitleColor(UIColor.snowCustom, for: .normal)
         btn.backgroundColor = UIColor.cyanCustom
         btn.layer.cornerRadius = 5
@@ -103,8 +104,26 @@ class MyProfileVC: UIViewController {
         return btn
     }()
     
+    private let exportArchive: UIButton = {
+        let btn = UIButton()
+        btn.translatesAutoresizingMaskIntoConstraints = false
+        btn.setTitle("Экспорт", for: .normal)
+        btn.titleLabel?.font = UIFont.customFont15
+        btn.titleLabel?.font = UIFont.customBold19
+        btn.setTitleColor(UIColor.blackCostum, for: .normal)
+        btn.backgroundColor = UIColor.clear
+        btn.layer.cornerRadius = 5
+        btn.addTarget(self, action: #selector(tappedIsBtn(_:)), for: .touchUpInside)
+        return btn
+    }()
+    
     var customNavigationBar: UIViewController!
+    var profileWindowVC: UIViewController!
+    var infoWindowVC: UIViewController!
     var profileSkillsVC: UIViewController!
+    var aboutMySelfWindowVC: UIViewController!
+    var myProjectWindowVC: UIViewController!
+    var myDocumentWindowVC: UIViewController!
     
     //MARK: Life cycle
     override func viewDidLoad() {
@@ -115,6 +134,43 @@ class MyProfileVC: UIViewController {
         self.infoProfileView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 1500)
         self.scroll.contentSize = self.infoProfileView.bounds.size
     
+        createdByView()
+        
+        configCustomInfoProfile()
+        anchorConstraint()
+    }
+    
+    func configCustomInfoProfile() {
+        customNavigationBar = CustomNavigationBarVC()
+        view.insertSubview(customNavigationBar.view, at: 0)
+        addChild(customNavigationBar)
+        
+        profileWindowVC = ProfileWindowVC()
+        profileView.insertSubview(profileWindowVC.view, at: 0)
+        addChild(profileWindowVC)
+        
+        infoWindowVC = InfoWindowVC()
+        infoView.insertSubview(infoWindowVC.view, at: 0)
+        addChild(infoWindowVC)
+        
+        profileSkillsVC = ProfileSkillsVC()
+        skillsView.insertSubview(profileSkillsVC.view, at: 0)
+        addChild(profileSkillsVC)
+        
+        aboutMySelfWindowVC = AboutMySelfWindowVC()
+        aboutMySelfView.insertSubview(aboutMySelfWindowVC.view, at: 0)
+        addChild(aboutMySelfWindowVC)
+        
+        myProjectWindowVC = MyProjectWindowVC()
+        myProjectView.insertSubview(myProjectWindowVC.view, at: 0)
+        addChild(myProjectWindowVC)
+        
+        myDocumentWindowVC = MyDocumentWindowVC()
+        myDocumentView.insertSubview(myDocumentWindowVC.view, at: 0)
+        addChild(myDocumentWindowVC)
+    }
+    
+    func createdByView() {
         self.infoProfileView.addSubview(profileView)
         self.infoProfileView.addSubview(infoView)
         self.infoProfileView.addSubview(skillsView)
@@ -122,19 +178,7 @@ class MyProfileVC: UIViewController {
         self.infoProfileView.addSubview(myProjectView)
         self.infoProfileView.addSubview(myDocumentView)
         self.infoProfileView.addSubview(editingProfile)
-        
-        configCustomBar()
-        anchorConstraint()
-    }
-    
-    func configCustomBar() {
-        customNavigationBar = CustomNavigationBarVC()
-        view.insertSubview(customNavigationBar.view, at: 0)
-        addChild(customNavigationBar)
-        
-        profileSkillsVC = ProfileSkillsVC()
-        skillsView.insertSubview(profileSkillsVC.view, at: 0)
-        addChild(profileSkillsVC)
+        self.infoProfileView.addSubview(exportArchive)
     }
     
     //MARK: Methods
@@ -144,11 +188,22 @@ class MyProfileVC: UIViewController {
 
     //MARK: Objc Methods
     @objc func tappedIsBtn(_ sender: UIButton) {
-        let alertController = UIAlertController(title: "Внимание!", message: "Раздел 'Редактирование профиля' находится в разработке.", preferredStyle: .alert)
-        let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
-        
-        alertController.addAction(alertAction)
-        self.present(alertController, animated: true, completion: nil)
+        switch sender.titleLabel?.text {
+        case "Редактировать профиль":
+            let alertController = UIAlertController(title: "Внимание!", message: "Раздел 'Редактирование профиля' находится в разработке.", preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            
+            alertController.addAction(alertAction)
+            self.present(alertController, animated: true, completion: nil)
+        case "Экспорт":
+            let alertController = UIAlertController(title: "Внимание!", message: "Раздел 'Экспорт' находится в разработке.", preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            
+            alertController.addAction(alertAction)
+            self.present(alertController, animated: true, completion: nil)
+        default:
+            break
+        }
     }
     
     //MARK: Constrains
@@ -198,7 +253,13 @@ class MyProfileVC: UIViewController {
         //editing profile
         self.editingProfile.topAnchor.constraint(equalTo: self.profileView.bottomAnchor, constant: 15).isActive = true
         self.editingProfile.leadingAnchor.constraint(equalTo: self.profileView.leadingAnchor).isActive = true
-        self.editingProfile.widthAnchor.constraint(equalToConstant: 210).isActive = true
-        self.editingProfile.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        self.editingProfile.widthAnchor.constraint(equalToConstant: 190).isActive = true
+        self.editingProfile.heightAnchor.constraint(equalToConstant: 25).isActive = true
+        
+        //export archive
+        self.exportArchive.topAnchor.constraint(equalTo: self.editingProfile.topAnchor).isActive = true
+        self.exportArchive.trailingAnchor.constraint(equalTo: self.profileView.trailingAnchor).isActive = true
+        self.exportArchive.widthAnchor.constraint(equalToConstant: 100).isActive = true
+        self.exportArchive.heightAnchor.constraint(equalToConstant: 25).isActive = true
     }
 }

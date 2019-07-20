@@ -11,7 +11,7 @@ import UIKit
 //MARK: Вход
 class EntranceVC: UIViewController {
     
-    //Properties
+    //MARK: Properties
     private let logoMops: UIImageView = {
         var img = UIImageView()
         img.translatesAutoresizingMaskIntoConstraints = false

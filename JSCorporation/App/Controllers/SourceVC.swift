@@ -12,69 +12,93 @@ import UIKit
 class SourceVC: UIViewController {
 
     //MARK: Properties
-    private let customNavigationBar: UIView = {
+    private var scroll: UIScrollView = {
+        let sc = UIScrollView()
+        sc.translatesAutoresizingMaskIntoConstraints = false
+        return sc
+    }()
+    
+    private var sourceCodeSearchInfoView = UIView()
+    
+    private let extensionSearchView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = UIColor.blackCostum
+        view.backgroundColor = UIColor.snowCustom
+        view.layer.cornerRadius = 5
+        view.layer.shadowColor = UIColor.smokeCustom.cgColor
+        view.layer.shadowOpacity = 15
+        view.layer.shadowRadius = 8
+        view.layer.shadowOffset = CGSize(width: 0, height: 0)
         return view
     }()
     
-    private let logoJS: UIImageView = {
-        var img = UIImageView()
-        img.translatesAutoresizingMaskIntoConstraints = false
-        img.contentMode = .scaleAspectFit
-        let image = UIImage(named: "JScorplogos1blue")
-        img.image = image
-        return img
+    private let myProjectsView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = UIColor.snowCustom
+        view.layer.cornerRadius = 5
+        view.layer.shadowColor = UIColor.smokeCustom.cgColor
+        view.layer.shadowOpacity = 15
+        view.layer.shadowRadius = 8
+        view.layer.shadowOffset = CGSize(width: 0, height: 0)
+        return view
     }()
     
-    private let pushMenu: UIImageView = {
-        var img = UIImageView()
-        img.translatesAutoresizingMaskIntoConstraints = false
-        img.contentMode = .scaleAspectFit
-        let image = UIImage(named: "19PushMenuB")
-        img.image = image
-        return img
+    private let sourceCodeView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = UIColor.snowCustom
+        view.layer.cornerRadius = 5
+        view.layer.shadowColor = UIColor.smokeCustom.cgColor
+        view.layer.shadowOpacity = 15
+        view.layer.shadowRadius = 8
+        view.layer.shadowOffset = CGSize(width: 0, height: 0)
+        return view
     }()
-    
-    private var menuImg: UIImageView = {
-        var img = UIImageView()
-        img.translatesAutoresizingMaskIntoConstraints = false
-        img.contentMode = .scaleAspectFit
-        let image = UIImage(named: "21Menu")
-        img.image = image
-        
-        return img
-    }()
+  
+    var customNavigationBar: UIViewController!
+    var sourceCodeWindow: UIViewController!
+    var sourceCodeProjectWindow: UIViewController!
+    var extensionSearchSourceCodeWindow: UIViewController!
     
     //MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.addSubview(customNavigationBar)
-        self.customNavigationBar.addSubview(pushMenu)
-        self.customNavigationBar.addSubview(logoJS)
-        self.customNavigationBar.addSubview(menuImg)
+        self.view.addSubview(scroll)
+        self.scroll.addSubview(sourceCodeSearchInfoView)
+        self.sourceCodeSearchInfoView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 990)
+        self.scroll.contentSize = self.sourceCodeSearchInfoView.bounds.size
         
+        createdByView()
+        
+        configCustomInfoProfile()
         anchorConstraint()
-        customView()
-        tappedIsImg()
-        
     }
     
     //MARK: Methods
-    private func tappedIsImg() {
-        let tapMenu = UITapGestureRecognizer(target: self, action: #selector(tappedIsMenu(_:)))
-        self.menuImg.addGestureRecognizer(tapMenu)
-        self.menuImg.isUserInteractionEnabled = true
+    func configCustomInfoProfile() {
+        customNavigationBar = CustomNavigationBarVC()
+        view.insertSubview(customNavigationBar.view, at: 0)
+        addChild(customNavigationBar)
         
-        let tapPush = UITapGestureRecognizer(target: self, action: #selector(tappedIsPushMenu(_:)))
-        self.pushMenu.addGestureRecognizer(tapPush)
-        self.pushMenu.isUserInteractionEnabled = true
+        sourceCodeWindow = SourceCodeWindowVC()
+        sourceCodeView.insertSubview(sourceCodeWindow.view, at: 0)
+        addChild(sourceCodeWindow)
+        
+        sourceCodeProjectWindow = SourceCodeProjectWindowVC()
+        myProjectsView.insertSubview(sourceCodeProjectWindow.view, at: 0)
+        addChild(sourceCodeProjectWindow)
+        
+        extensionSearchSourceCodeWindow = ExtensionSearchSourceCodeWindowVC()
+        extensionSearchView.insertSubview(extensionSearchSourceCodeWindow.view, at: 0)
+        addChild(extensionSearchSourceCodeWindow)
     }
     
-    private func customView() {
-        self.view.backgroundColor = UIColor.white
+    func createdByView() {
+        self.sourceCodeSearchInfoView.addSubview(extensionSearchView)
+        self.sourceCodeSearchInfoView.addSubview(myProjectsView)
+        self.sourceCodeSearchInfoView.addSubview(sourceCodeView)
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -82,41 +106,32 @@ class SourceVC: UIViewController {
     }
     
     //MARK: Objc Methods
-    @objc func tappedIsMenu(_ sender: AnyObject) {
-        print("press button image menu")
-    }
-    
-    @objc func tappedIsPushMenu(_ sender: AnyObject) {
-        print("press button image push menu")
-    }
     
     //MARK: Constrains
-    private func anchorConstraint() {
+    func anchorConstraint() {
+        //scroll
+        self.scroll.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 110).isActive = true
+        self.scroll.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
+        self.scroll.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
+        self.scroll.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
         
-        //Custom Navigation Bar
-        self.customNavigationBar.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
-        self.customNavigationBar.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
-        self.customNavigationBar.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
-        self.customNavigationBar.heightAnchor.constraint(equalToConstant: 110).isActive = true
+        //extension search view
+        self.extensionSearchView.topAnchor.constraint(equalTo: self.sourceCodeSearchInfoView.topAnchor, constant: 15).isActive = true
+        self.extensionSearchView.leadingAnchor.constraint(equalTo: self.sourceCodeSearchInfoView.leadingAnchor, constant: 10).isActive = true
+        self.extensionSearchView.trailingAnchor.constraint(equalTo: self.sourceCodeSearchInfoView.trailingAnchor, constant: -10).isActive = true
+        self.extensionSearchView.heightAnchor.constraint(equalToConstant: 380).isActive = true
         
-        //Logo
-        self.logoJS.heightAnchor.constraint(equalToConstant: 70).isActive = true
-        self.logoJS.widthAnchor.constraint(equalToConstant: 180).isActive = true
-        self.logoJS.leadingAnchor.constraint(equalTo: self.customNavigationBar.leadingAnchor, constant: 12).isActive = true
-        self.logoJS.bottomAnchor.constraint(equalTo: self.customNavigationBar.bottomAnchor, constant: -7).isActive = true
+        //myProjectsView
+        self.myProjectsView.topAnchor.constraint(equalTo: self.extensionSearchView.bottomAnchor, constant: 15).isActive = true
+        self.myProjectsView.leadingAnchor.constraint(equalTo: self.extensionSearchView.leadingAnchor).isActive = true
+        self.myProjectsView.trailingAnchor.constraint(equalTo: self.extensionSearchView.trailingAnchor).isActive = true
+        self.myProjectsView.heightAnchor.constraint(equalToConstant: 250).isActive = true
         
-        //Menu
-        self.menuImg.heightAnchor.constraint(equalToConstant: 30).isActive = true
-        self.menuImg.widthAnchor.constraint(equalToConstant: 30).isActive = true
-        self.menuImg.trailingAnchor.constraint(equalTo: self.customNavigationBar.trailingAnchor, constant: -12).isActive = true
-        self.menuImg.bottomAnchor.constraint(equalTo: self.customNavigationBar.bottomAnchor, constant: -22).isActive = true
-        
-        //Push menu
-        self.pushMenu.heightAnchor.constraint(equalToConstant: 30).isActive = true
-        self.pushMenu.widthAnchor.constraint(equalToConstant: 30).isActive = true
-        self.pushMenu.trailingAnchor.constraint(equalTo: self.menuImg.leadingAnchor, constant: -12).isActive = true
-        self.pushMenu.bottomAnchor.constraint(equalTo: self.customNavigationBar.bottomAnchor, constant: -22).isActive = true
-        
+        //sourceCodeView
+        self.sourceCodeView.topAnchor.constraint(equalTo: self.myProjectsView.bottomAnchor, constant: 15).isActive = true
+        self.sourceCodeView.bottomAnchor.constraint(equalTo: self.sourceCodeSearchInfoView.bottomAnchor, constant: -15).isActive = true
+        self.sourceCodeView.leadingAnchor.constraint(equalTo: self.extensionSearchView.leadingAnchor).isActive = true
+        self.sourceCodeView.trailingAnchor.constraint(equalTo: self.extensionSearchView.trailingAnchor).isActive = true
+        self.sourceCodeView.heightAnchor.constraint(equalToConstant: 300).isActive = true
     }
-
 }

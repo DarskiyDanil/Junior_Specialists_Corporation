@@ -31,8 +31,23 @@
 		890F36EE22A2F7BF00EB1EAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890F36EC22A2F7BF00EB1EAE /* LaunchScreen.storyboard */; };
 		8919EFD422A99D3F001CAD8D /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919EFD322A99D3F001CAD8D /* MenuModel.swift */; };
 		8957118422CE4C990058579A /* ProfileSkillsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957118122CE4C990058579A /* ProfileSkillsVC.swift */; };
-		8957118522CE4C990058579A /* CustomEntranceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957118222CE4C990058579A /* CustomEntranceView.swift */; };
+		8957118522CE4C990058579A /* EntranceWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957118222CE4C990058579A /* EntranceWindowVC.swift */; };
 		8957118622CE4C990058579A /* CustomNavigationBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957118322CE4C990058579A /* CustomNavigationBarVC.swift */; };
+		89B950F222D1ED5C0033F924 /* RegistrationWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B950F122D1ED5C0033F924 /* RegistrationWindowVC.swift */; };
+		89B950F522D1F3190033F924 /* RegistrationWinWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B950F422D1F3190033F924 /* RegistrationWinWindowVC.swift */; };
+		89B950F722D1FBFA0033F924 /* RecoveryPasswordWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B950F622D1FBFA0033F924 /* RecoveryPasswordWindowVC.swift */; };
+		89B950F922D1FC160033F924 /* RecoveryPasswordWinWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B950F822D1FC160033F924 /* RecoveryPasswordWinWindowVC.swift */; };
+		89B950FB22D200610033F924 /* ProfileWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B950FA22D200610033F924 /* ProfileWindowVC.swift */; };
+		89B950FD22D2008F0033F924 /* InfoWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B950FC22D2008F0033F924 /* InfoWindowVC.swift */; };
+		89B950FF22D200AC0033F924 /* AboutMySelfWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B950FE22D200AC0033F924 /* AboutMySelfWindowVC.swift */; };
+		89B9510122D200BF0033F924 /* MyProjectWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B9510022D200BF0033F924 /* MyProjectWindowVC.swift */; };
+		89B9510322D200D70033F924 /* MyDocumentWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B9510222D200D70033F924 /* MyDocumentWindowVC.swift */; };
+		89ED1C4422E318F4009EB9A4 /* SourceCodeWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ED1C4322E318F4009EB9A4 /* SourceCodeWindowVC.swift */; };
+		89ED1C4622E32176009EB9A4 /* SourceCodeProjectWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ED1C4522E32176009EB9A4 /* SourceCodeProjectWindowVC.swift */; };
+		89ED1C4822E324ED009EB9A4 /* ExtensionSearchSourceCodeWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ED1C4722E324ED009EB9A4 /* ExtensionSearchSourceCodeWindowVC.swift */; };
+		89ED1C4A22E3309B009EB9A4 /* ExtensionSearchObjectDesignWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ED1C4922E3309B009EB9A4 /* ExtensionSearchObjectDesignWindowVC.swift */; };
+		89ED1C4C22E330BE009EB9A4 /* ObjectDesignProjectWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ED1C4B22E330BE009EB9A4 /* ObjectDesignProjectWindowVC.swift */; };
+		89ED1C4E22E330D7009EB9A4 /* ObjectDesignWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ED1C4D22E330D7009EB9A4 /* ObjectDesignWindowVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,8 +77,23 @@
 		890F36EF22A2F7BF00EB1EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8919EFD322A99D3F001CAD8D /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuModel.swift; path = ../../MenuModel.swift; sourceTree = "<group>"; };
 		8957118122CE4C990058579A /* ProfileSkillsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSkillsVC.swift; sourceTree = "<group>"; };
-		8957118222CE4C990058579A /* CustomEntranceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomEntranceView.swift; sourceTree = "<group>"; };
+		8957118222CE4C990058579A /* EntranceWindowVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntranceWindowVC.swift; sourceTree = "<group>"; };
 		8957118322CE4C990058579A /* CustomNavigationBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBarVC.swift; sourceTree = "<group>"; };
+		89B950F122D1ED5C0033F924 /* RegistrationWindowVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationWindowVC.swift; sourceTree = "<group>"; };
+		89B950F422D1F3190033F924 /* RegistrationWinWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationWinWindowVC.swift; sourceTree = "<group>"; };
+		89B950F622D1FBFA0033F924 /* RecoveryPasswordWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryPasswordWindowVC.swift; sourceTree = "<group>"; };
+		89B950F822D1FC160033F924 /* RecoveryPasswordWinWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryPasswordWinWindowVC.swift; sourceTree = "<group>"; };
+		89B950FA22D200610033F924 /* ProfileWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWindowVC.swift; sourceTree = "<group>"; };
+		89B950FC22D2008F0033F924 /* InfoWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoWindowVC.swift; sourceTree = "<group>"; };
+		89B950FE22D200AC0033F924 /* AboutMySelfWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMySelfWindowVC.swift; sourceTree = "<group>"; };
+		89B9510022D200BF0033F924 /* MyProjectWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectWindowVC.swift; sourceTree = "<group>"; };
+		89B9510222D200D70033F924 /* MyDocumentWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDocumentWindowVC.swift; sourceTree = "<group>"; };
+		89ED1C4322E318F4009EB9A4 /* SourceCodeWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceCodeWindowVC.swift; sourceTree = "<group>"; };
+		89ED1C4522E32176009EB9A4 /* SourceCodeProjectWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceCodeProjectWindowVC.swift; sourceTree = "<group>"; };
+		89ED1C4722E324ED009EB9A4 /* ExtensionSearchSourceCodeWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionSearchSourceCodeWindowVC.swift; sourceTree = "<group>"; };
+		89ED1C4922E3309B009EB9A4 /* ExtensionSearchObjectDesignWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionSearchObjectDesignWindowVC.swift; sourceTree = "<group>"; };
+		89ED1C4B22E330BE009EB9A4 /* ObjectDesignProjectWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDesignProjectWindowVC.swift; sourceTree = "<group>"; };
+		89ED1C4D22E330D7009EB9A4 /* ObjectDesignWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDesignWindowVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,9 +191,20 @@
 		8951A6FB22CE4B380015231A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8957118222CE4C990058579A /* CustomEntranceView.swift */,
 				8957118322CE4C990058579A /* CustomNavigationBarVC.swift */,
-				8957118122CE4C990058579A /* ProfileSkillsVC.swift */,
+				8957118222CE4C990058579A /* EntranceWindowVC.swift */,
+				89B950F022D1ED1F0033F924 /* Registration */,
+				89B950F322D1ED6C0033F924 /* Recovery */,
+				89B950EF22D1ED030033F924 /* MyProfileVC */,
+				89ED1C3A22E31371009EB9A4 /* MyDocumentsVC */,
+				89ED1C3B22E31384009EB9A4 /* SourceVC */,
+				89ED1C3C22E3138C009EB9A4 /* ObjectsDesignVC */,
+				89ED1C3D22E3139A009EB9A4 /* SpecialistsVC */,
+				89ED1C3E22E313A5009EB9A4 /* InnovatorsVC */,
+				89ED1C3F22E313B1009EB9A4 /* ProjectsVC */,
+				89ED1C4022E313B9009EB9A4 /* CuratorsVC */,
+				89ED1C4122E313C3009EB9A4 /* MentorsVC */,
+				89ED1C4222E313CE009EB9A4 /* ApplicationsVC */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -173,6 +214,106 @@
 			children = (
 			);
 			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		89B950EF22D1ED030033F924 /* MyProfileVC */ = {
+			isa = PBXGroup;
+			children = (
+				89B950FA22D200610033F924 /* ProfileWindowVC.swift */,
+				89B950FC22D2008F0033F924 /* InfoWindowVC.swift */,
+				8957118122CE4C990058579A /* ProfileSkillsVC.swift */,
+				89B950FE22D200AC0033F924 /* AboutMySelfWindowVC.swift */,
+				89B9510022D200BF0033F924 /* MyProjectWindowVC.swift */,
+				89B9510222D200D70033F924 /* MyDocumentWindowVC.swift */,
+			);
+			path = MyProfileVC;
+			sourceTree = "<group>";
+		};
+		89B950F022D1ED1F0033F924 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				89B950F122D1ED5C0033F924 /* RegistrationWindowVC.swift */,
+				89B950F422D1F3190033F924 /* RegistrationWinWindowVC.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		89B950F322D1ED6C0033F924 /* Recovery */ = {
+			isa = PBXGroup;
+			children = (
+				89B950F622D1FBFA0033F924 /* RecoveryPasswordWindowVC.swift */,
+				89B950F822D1FC160033F924 /* RecoveryPasswordWinWindowVC.swift */,
+			);
+			path = Recovery;
+			sourceTree = "<group>";
+		};
+		89ED1C3A22E31371009EB9A4 /* MyDocumentsVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyDocumentsVC;
+			sourceTree = "<group>";
+		};
+		89ED1C3B22E31384009EB9A4 /* SourceVC */ = {
+			isa = PBXGroup;
+			children = (
+				89ED1C4722E324ED009EB9A4 /* ExtensionSearchSourceCodeWindowVC.swift */,
+				89ED1C4522E32176009EB9A4 /* SourceCodeProjectWindowVC.swift */,
+				89ED1C4322E318F4009EB9A4 /* SourceCodeWindowVC.swift */,
+			);
+			path = SourceVC;
+			sourceTree = "<group>";
+		};
+		89ED1C3C22E3138C009EB9A4 /* ObjectsDesignVC */ = {
+			isa = PBXGroup;
+			children = (
+				89ED1C4922E3309B009EB9A4 /* ExtensionSearchObjectDesignWindowVC.swift */,
+				89ED1C4B22E330BE009EB9A4 /* ObjectDesignProjectWindowVC.swift */,
+				89ED1C4D22E330D7009EB9A4 /* ObjectDesignWindowVC.swift */,
+			);
+			path = ObjectsDesignVC;
+			sourceTree = "<group>";
+		};
+		89ED1C3D22E3139A009EB9A4 /* SpecialistsVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SpecialistsVC;
+			sourceTree = "<group>";
+		};
+		89ED1C3E22E313A5009EB9A4 /* InnovatorsVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = InnovatorsVC;
+			sourceTree = "<group>";
+		};
+		89ED1C3F22E313B1009EB9A4 /* ProjectsVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProjectsVC;
+			sourceTree = "<group>";
+		};
+		89ED1C4022E313B9009EB9A4 /* CuratorsVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CuratorsVC;
+			sourceTree = "<group>";
+		};
+		89ED1C4122E313C3009EB9A4 /* MentorsVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MentorsVC;
+			sourceTree = "<group>";
+		};
+		89ED1C4222E313CE009EB9A4 /* ApplicationsVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ApplicationsVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,30 +386,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89B9510122D200BF0033F924 /* MyProjectWindowVC.swift in Sources */,
 				8957118422CE4C990058579A /* ProfileSkillsVC.swift in Sources */,
 				890E9C1222A5B10600CC7BA4 /* RegistrationWinVC.swift in Sources */,
 				890E9C0E22A5B0D700CC7BA4 /* EntranceVC.swift in Sources */,
 				890E9C1C22A5B16600CC7BA4 /* MyProjectVC.swift in Sources */,
+				89B950F522D1F3190033F924 /* RegistrationWinWindowVC.swift in Sources */,
 				890E9C2822A5B1EA00CC7BA4 /* ProjectsVC.swift in Sources */,
+				89B9510322D200D70033F924 /* MyDocumentWindowVC.swift in Sources */,
 				890E9C1E22A5B17900CC7BA4 /* MyDocumentsVC.swift in Sources */,
 				890E9C2E22A5B21300CC7BA4 /* ApplicationsVC.swift in Sources */,
+				89ED1C4822E324ED009EB9A4 /* ExtensionSearchSourceCodeWindowVC.swift in Sources */,
 				890E9C2422A5B1B000CC7BA4 /* SpecialistsVC.swift in Sources */,
+				89B950FF22D200AC0033F924 /* AboutMySelfWindowVC.swift in Sources */,
 				890E9C2622A5B1D200CC7BA4 /* InnovatorsVC.swift in Sources */,
 				890E9C2A22A5B1F700CC7BA4 /* CuratorsVC.swift in Sources */,
+				89ED1C4C22E330BE009EB9A4 /* ObjectDesignProjectWindowVC.swift in Sources */,
+				89B950F222D1ED5C0033F924 /* RegistrationWindowVC.swift in Sources */,
 				890E9C1022A5B0F400CC7BA4 /* RegistrationVC.swift in Sources */,
 				890E9C2222A5B1A200CC7BA4 /* ObjectsDesignVC.swift in Sources */,
 				890E9C2C22A5B20300CC7BA4 /* MentorsVC.swift in Sources */,
 				890E9C1822A5B14A00CC7BA4 /* MenuVC.swift in Sources */,
-				8957118522CE4C990058579A /* CustomEntranceView.swift in Sources */,
+				8957118522CE4C990058579A /* EntranceWindowVC.swift in Sources */,
 				890E9C3222A5B23500CC7BA4 /* CostumFont.swift in Sources */,
+				89ED1C4622E32176009EB9A4 /* SourceCodeProjectWindowVC.swift in Sources */,
 				890E9C1A22A5B15600CC7BA4 /* MyProfileVC.swift in Sources */,
+				89B950F722D1FBFA0033F924 /* RecoveryPasswordWindowVC.swift in Sources */,
+				89B950FB22D200610033F924 /* ProfileWindowVC.swift in Sources */,
+				89ED1C4E22E330D7009EB9A4 /* ObjectDesignWindowVC.swift in Sources */,
+				89ED1C4422E318F4009EB9A4 /* SourceCodeWindowVC.swift in Sources */,
 				8957118622CE4C990058579A /* CustomNavigationBarVC.swift in Sources */,
 				890E9C1622A5B13600CC7BA4 /* RecoveryPasswordWinVC.swift in Sources */,
 				890F36E422A2F7BC00EB1EAE /* AppDelegate.swift in Sources */,
 				8919EFD422A99D3F001CAD8D /* MenuModel.swift in Sources */,
 				890E9C3022A5B22800CC7BA4 /* CostumColor.swift in Sources */,
+				89B950FD22D2008F0033F924 /* InfoWindowVC.swift in Sources */,
 				890E9C1422A5B12200CC7BA4 /* RecoveryPasswordVC.swift in Sources */,
 				890E9C2022A5B18800CC7BA4 /* SourceVC.swift in Sources */,
+				89B950F922D1FC160033F924 /* RecoveryPasswordWinWindowVC.swift in Sources */,
+				89ED1C4A22E3309B009EB9A4 /* ExtensionSearchObjectDesignWindowVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
