@@ -33,6 +33,16 @@
 		8957118422CE4C990058579A /* ProfileSkillsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957118122CE4C990058579A /* ProfileSkillsVC.swift */; };
 		8957118522CE4C990058579A /* EntranceWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957118222CE4C990058579A /* EntranceWindowVC.swift */; };
 		8957118622CE4C990058579A /* CustomNavigationBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957118322CE4C990058579A /* CustomNavigationBarVC.swift */; };
+		898A377B22E61E81007A6008 /* ExtensionSearchSpecialistsWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898A377A22E61E81007A6008 /* ExtensionSearchSpecialistsWindowVC.swift */; };
+		898A377D22E61EAC007A6008 /* ListsSpecialistsWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898A377C22E61EAC007A6008 /* ListsSpecialistsWindowVC.swift */; };
+		89B94D5022E76555004AF105 /* ExtensionSearchInnovatorWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B94D4F22E76555004AF105 /* ExtensionSearchInnovatorWindowVC.swift */; };
+		89B94D5222E76574004AF105 /* ExtensionSearchCuratorWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B94D5122E76574004AF105 /* ExtensionSearchCuratorWindowVC.swift */; };
+		89B94D5422E7658C004AF105 /* ExtensionSearchMentorWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B94D5322E7658C004AF105 /* ExtensionSearchMentorWindowVC.swift */; };
+		89B94D5622E765F8004AF105 /* ListInnovatorsWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B94D5522E765F8004AF105 /* ListInnovatorsWindowVC.swift */; };
+		89B94D5822E76615004AF105 /* ListCuratorsWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B94D5722E76615004AF105 /* ListCuratorsWindowVC.swift */; };
+		89B94D5A22E7662C004AF105 /* ListMentorsWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B94D5922E7662C004AF105 /* ListMentorsWindowVC.swift */; };
+		89B94D5C22E76D83004AF105 /* ExtensionSearchProjectsWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B94D5B22E76D83004AF105 /* ExtensionSearchProjectsWindowVC.swift */; };
+		89B94D5E22E76D9A004AF105 /* ListsProjectsWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B94D5D22E76D9A004AF105 /* ListsProjectsWindowVC.swift */; };
 		89B950F222D1ED5C0033F924 /* RegistrationWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B950F122D1ED5C0033F924 /* RegistrationWindowVC.swift */; };
 		89B950F522D1F3190033F924 /* RegistrationWinWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B950F422D1F3190033F924 /* RegistrationWinWindowVC.swift */; };
 		89B950F722D1FBFA0033F924 /* RecoveryPasswordWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B950F622D1FBFA0033F924 /* RecoveryPasswordWindowVC.swift */; };
@@ -79,6 +89,16 @@
 		8957118122CE4C990058579A /* ProfileSkillsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSkillsVC.swift; sourceTree = "<group>"; };
 		8957118222CE4C990058579A /* EntranceWindowVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntranceWindowVC.swift; sourceTree = "<group>"; };
 		8957118322CE4C990058579A /* CustomNavigationBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBarVC.swift; sourceTree = "<group>"; };
+		898A377A22E61E81007A6008 /* ExtensionSearchSpecialistsWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionSearchSpecialistsWindowVC.swift; sourceTree = "<group>"; };
+		898A377C22E61EAC007A6008 /* ListsSpecialistsWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsSpecialistsWindowVC.swift; sourceTree = "<group>"; };
+		89B94D4F22E76555004AF105 /* ExtensionSearchInnovatorWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionSearchInnovatorWindowVC.swift; sourceTree = "<group>"; };
+		89B94D5122E76574004AF105 /* ExtensionSearchCuratorWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionSearchCuratorWindowVC.swift; sourceTree = "<group>"; };
+		89B94D5322E7658C004AF105 /* ExtensionSearchMentorWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionSearchMentorWindowVC.swift; sourceTree = "<group>"; };
+		89B94D5522E765F8004AF105 /* ListInnovatorsWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInnovatorsWindowVC.swift; sourceTree = "<group>"; };
+		89B94D5722E76615004AF105 /* ListCuratorsWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCuratorsWindowVC.swift; sourceTree = "<group>"; };
+		89B94D5922E7662C004AF105 /* ListMentorsWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMentorsWindowVC.swift; sourceTree = "<group>"; };
+		89B94D5B22E76D83004AF105 /* ExtensionSearchProjectsWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionSearchProjectsWindowVC.swift; sourceTree = "<group>"; };
+		89B94D5D22E76D9A004AF105 /* ListsProjectsWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsProjectsWindowVC.swift; sourceTree = "<group>"; };
 		89B950F122D1ED5C0033F924 /* RegistrationWindowVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationWindowVC.swift; sourceTree = "<group>"; };
 		89B950F422D1F3190033F924 /* RegistrationWinWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationWinWindowVC.swift; sourceTree = "<group>"; };
 		89B950F622D1FBFA0033F924 /* RecoveryPasswordWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryPasswordWindowVC.swift; sourceTree = "<group>"; };
@@ -277,6 +297,8 @@
 		89ED1C3D22E3139A009EB9A4 /* SpecialistsVC */ = {
 			isa = PBXGroup;
 			children = (
+				898A377A22E61E81007A6008 /* ExtensionSearchSpecialistsWindowVC.swift */,
+				898A377C22E61EAC007A6008 /* ListsSpecialistsWindowVC.swift */,
 			);
 			path = SpecialistsVC;
 			sourceTree = "<group>";
@@ -284,6 +306,8 @@
 		89ED1C3E22E313A5009EB9A4 /* InnovatorsVC */ = {
 			isa = PBXGroup;
 			children = (
+				89B94D4F22E76555004AF105 /* ExtensionSearchInnovatorWindowVC.swift */,
+				89B94D5522E765F8004AF105 /* ListInnovatorsWindowVC.swift */,
 			);
 			path = InnovatorsVC;
 			sourceTree = "<group>";
@@ -291,6 +315,8 @@
 		89ED1C3F22E313B1009EB9A4 /* ProjectsVC */ = {
 			isa = PBXGroup;
 			children = (
+				89B94D5B22E76D83004AF105 /* ExtensionSearchProjectsWindowVC.swift */,
+				89B94D5D22E76D9A004AF105 /* ListsProjectsWindowVC.swift */,
 			);
 			path = ProjectsVC;
 			sourceTree = "<group>";
@@ -298,6 +324,8 @@
 		89ED1C4022E313B9009EB9A4 /* CuratorsVC */ = {
 			isa = PBXGroup;
 			children = (
+				89B94D5122E76574004AF105 /* ExtensionSearchCuratorWindowVC.swift */,
+				89B94D5722E76615004AF105 /* ListCuratorsWindowVC.swift */,
 			);
 			path = CuratorsVC;
 			sourceTree = "<group>";
@@ -305,6 +333,8 @@
 		89ED1C4122E313C3009EB9A4 /* MentorsVC */ = {
 			isa = PBXGroup;
 			children = (
+				89B94D5322E7658C004AF105 /* ExtensionSearchMentorWindowVC.swift */,
+				89B94D5922E7662C004AF105 /* ListMentorsWindowVC.swift */,
 			);
 			path = MentorsVC;
 			sourceTree = "<group>";
@@ -390,6 +420,7 @@
 				8957118422CE4C990058579A /* ProfileSkillsVC.swift in Sources */,
 				890E9C1222A5B10600CC7BA4 /* RegistrationWinVC.swift in Sources */,
 				890E9C0E22A5B0D700CC7BA4 /* EntranceVC.swift in Sources */,
+				89B94D5222E76574004AF105 /* ExtensionSearchCuratorWindowVC.swift in Sources */,
 				890E9C1C22A5B16600CC7BA4 /* MyProjectVC.swift in Sources */,
 				89B950F522D1F3190033F924 /* RegistrationWinWindowVC.swift in Sources */,
 				890E9C2822A5B1EA00CC7BA4 /* ProjectsVC.swift in Sources */,
@@ -397,8 +428,10 @@
 				890E9C1E22A5B17900CC7BA4 /* MyDocumentsVC.swift in Sources */,
 				890E9C2E22A5B21300CC7BA4 /* ApplicationsVC.swift in Sources */,
 				89ED1C4822E324ED009EB9A4 /* ExtensionSearchSourceCodeWindowVC.swift in Sources */,
+				898A377B22E61E81007A6008 /* ExtensionSearchSpecialistsWindowVC.swift in Sources */,
 				890E9C2422A5B1B000CC7BA4 /* SpecialistsVC.swift in Sources */,
 				89B950FF22D200AC0033F924 /* AboutMySelfWindowVC.swift in Sources */,
+				89B94D5422E7658C004AF105 /* ExtensionSearchMentorWindowVC.swift in Sources */,
 				890E9C2622A5B1D200CC7BA4 /* InnovatorsVC.swift in Sources */,
 				890E9C2A22A5B1F700CC7BA4 /* CuratorsVC.swift in Sources */,
 				89ED1C4C22E330BE009EB9A4 /* ObjectDesignProjectWindowVC.swift in Sources */,
@@ -408,9 +441,11 @@
 				890E9C2C22A5B20300CC7BA4 /* MentorsVC.swift in Sources */,
 				890E9C1822A5B14A00CC7BA4 /* MenuVC.swift in Sources */,
 				8957118522CE4C990058579A /* EntranceWindowVC.swift in Sources */,
+				89B94D5822E76615004AF105 /* ListCuratorsWindowVC.swift in Sources */,
 				890E9C3222A5B23500CC7BA4 /* CostumFont.swift in Sources */,
 				89ED1C4622E32176009EB9A4 /* SourceCodeProjectWindowVC.swift in Sources */,
 				890E9C1A22A5B15600CC7BA4 /* MyProfileVC.swift in Sources */,
+				89B94D5E22E76D9A004AF105 /* ListsProjectsWindowVC.swift in Sources */,
 				89B950F722D1FBFA0033F924 /* RecoveryPasswordWindowVC.swift in Sources */,
 				89B950FB22D200610033F924 /* ProfileWindowVC.swift in Sources */,
 				89ED1C4E22E330D7009EB9A4 /* ObjectDesignWindowVC.swift in Sources */,
@@ -418,13 +453,18 @@
 				8957118622CE4C990058579A /* CustomNavigationBarVC.swift in Sources */,
 				890E9C1622A5B13600CC7BA4 /* RecoveryPasswordWinVC.swift in Sources */,
 				890F36E422A2F7BC00EB1EAE /* AppDelegate.swift in Sources */,
+				89B94D5022E76555004AF105 /* ExtensionSearchInnovatorWindowVC.swift in Sources */,
 				8919EFD422A99D3F001CAD8D /* MenuModel.swift in Sources */,
 				890E9C3022A5B22800CC7BA4 /* CostumColor.swift in Sources */,
 				89B950FD22D2008F0033F924 /* InfoWindowVC.swift in Sources */,
+				89B94D5A22E7662C004AF105 /* ListMentorsWindowVC.swift in Sources */,
+				89B94D5622E765F8004AF105 /* ListInnovatorsWindowVC.swift in Sources */,
 				890E9C1422A5B12200CC7BA4 /* RecoveryPasswordVC.swift in Sources */,
 				890E9C2022A5B18800CC7BA4 /* SourceVC.swift in Sources */,
 				89B950F922D1FC160033F924 /* RecoveryPasswordWinWindowVC.swift in Sources */,
 				89ED1C4A22E3309B009EB9A4 /* ExtensionSearchObjectDesignWindowVC.swift in Sources */,
+				89B94D5C22E76D83004AF105 /* ExtensionSearchProjectsWindowVC.swift in Sources */,
+				898A377D22E61EAC007A6008 /* ListsSpecialistsWindowVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

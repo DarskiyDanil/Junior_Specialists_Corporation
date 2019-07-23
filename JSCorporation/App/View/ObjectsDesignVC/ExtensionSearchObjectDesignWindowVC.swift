@@ -188,4 +188,6 @@ class ExtensionSearchObjectDesignWindowVC: UIViewController {
         self.allAreas.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 10).isActive = true
         self.allAreas.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -10).isActive = true
         self.allAreas.heightAnchor.constraint(equalToConstant: 30).isActive = true
-    }}
+    }
+    
+}

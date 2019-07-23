@@ -18,10 +18,10 @@ class MyProjectVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configCustomBar()
+        configCustomInformationView()
     }
     
-    func configCustomBar() {
+    func configCustomInformationView() {
         customNavigationBar = CustomNavigationBarVC()
         view.insertSubview(customNavigationBar.view, at: 0)
         addChild(customNavigationBar)

@@ -136,11 +136,11 @@ class MyProfileVC: UIViewController {
     
         createdByView()
         
-        configCustomInfoProfile()
+        configCustomInformationView()
         anchorConstraint()
     }
     
-    func configCustomInfoProfile() {
+    func configCustomInformationView() {
         customNavigationBar = CustomNavigationBarVC()
         view.insertSubview(customNavigationBar.view, at: 0)
         addChild(customNavigationBar)
