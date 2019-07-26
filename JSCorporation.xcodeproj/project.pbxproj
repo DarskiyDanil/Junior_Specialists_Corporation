@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8905CE2E22EB6B4B009202FA /* ExtensionSearchMyDocumentsWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905CE2D22EB6B4B009202FA /* ExtensionSearchMyDocumentsWindowVC.swift */; };
+		8905CE3022EB6B76009202FA /* MyDocumentsWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905CE2F22EB6B76009202FA /* MyDocumentsWindowVC.swift */; };
+		8905CE3222EB6B8D009202FA /* FormsOfDocumentsWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905CE3122EB6B8D009202FA /* FormsOfDocumentsWindowVC.swift */; };
+		8905CE3422EB827F009202FA /* MyProjectListWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905CE3322EB827F009202FA /* MyProjectListWindowVC.swift */; };
+		8905CE3622EB837B009202FA /* FullTitleOfMyProjectWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905CE3522EB837B009202FA /* FullTitleOfMyProjectWindowVC.swift */; };
+		8905CE3822EB8EB3009202FA /* InfoMyProjectWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905CE3722EB8EB3009202FA /* InfoMyProjectWindowVC.swift */; };
+		8905CE3A22EB9035009202FA /* CompetitionWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905CE3922EB9035009202FA /* CompetitionWindowVC.swift */; };
+		8905CE3C22EB9337009202FA /* AboutTheProjectWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905CE3B22EB9337009202FA /* AboutTheProjectWindowVC.swift */; };
+		8905CE3E22EB945A009202FA /* TeamWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8905CE3D22EB945A009202FA /* TeamWindowVC.swift */; };
 		890E9C0E22A5B0D700CC7BA4 /* EntranceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890E9C0D22A5B0D700CC7BA4 /* EntranceVC.swift */; };
 		890E9C1022A5B0F400CC7BA4 /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890E9C0F22A5B0F400CC7BA4 /* RegistrationVC.swift */; };
 		890E9C1222A5B10600CC7BA4 /* RegistrationWinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890E9C1122A5B10600CC7BA4 /* RegistrationWinVC.swift */; };
@@ -61,6 +70,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8905CE2D22EB6B4B009202FA /* ExtensionSearchMyDocumentsWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionSearchMyDocumentsWindowVC.swift; sourceTree = "<group>"; };
+		8905CE2F22EB6B76009202FA /* MyDocumentsWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDocumentsWindowVC.swift; sourceTree = "<group>"; };
+		8905CE3122EB6B8D009202FA /* FormsOfDocumentsWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormsOfDocumentsWindowVC.swift; sourceTree = "<group>"; };
+		8905CE3322EB827F009202FA /* MyProjectListWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectListWindowVC.swift; sourceTree = "<group>"; };
+		8905CE3522EB837B009202FA /* FullTitleOfMyProjectWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullTitleOfMyProjectWindowVC.swift; sourceTree = "<group>"; };
+		8905CE3722EB8EB3009202FA /* InfoMyProjectWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMyProjectWindowVC.swift; sourceTree = "<group>"; };
+		8905CE3922EB9035009202FA /* CompetitionWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionWindowVC.swift; sourceTree = "<group>"; };
+		8905CE3B22EB9337009202FA /* AboutTheProjectWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTheProjectWindowVC.swift; sourceTree = "<group>"; };
+		8905CE3D22EB945A009202FA /* TeamWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamWindowVC.swift; sourceTree = "<group>"; };
 		890E9C0D22A5B0D700CC7BA4 /* EntranceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntranceVC.swift; sourceTree = "<group>"; };
 		890E9C0F22A5B0F400CC7BA4 /* RegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVC.swift; sourceTree = "<group>"; };
 		890E9C1122A5B10600CC7BA4 /* RegistrationWinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationWinVC.swift; sourceTree = "<group>"; };
@@ -127,6 +145,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8905CE2C22EB695E009202FA /* MyProjectsVC */ = {
+			isa = PBXGroup;
+			children = (
+				8905CE3322EB827F009202FA /* MyProjectListWindowVC.swift */,
+				8905CE3522EB837B009202FA /* FullTitleOfMyProjectWindowVC.swift */,
+				8905CE3722EB8EB3009202FA /* InfoMyProjectWindowVC.swift */,
+				8905CE3922EB9035009202FA /* CompetitionWindowVC.swift */,
+				8905CE3B22EB9337009202FA /* AboutTheProjectWindowVC.swift */,
+				8905CE3D22EB945A009202FA /* TeamWindowVC.swift */,
+			);
+			path = MyProjectsVC;
+			sourceTree = "<group>";
+		};
 		890E9C3322A5B23E00CC7BA4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +247,7 @@
 				89B950F022D1ED1F0033F924 /* Registration */,
 				89B950F322D1ED6C0033F924 /* Recovery */,
 				89B950EF22D1ED030033F924 /* MyProfileVC */,
+				8905CE2C22EB695E009202FA /* MyProjectsVC */,
 				89ED1C3A22E31371009EB9A4 /* MyDocumentsVC */,
 				89ED1C3B22E31384009EB9A4 /* SourceVC */,
 				89ED1C3C22E3138C009EB9A4 /* ObjectsDesignVC */,
@@ -270,6 +302,9 @@
 		89ED1C3A22E31371009EB9A4 /* MyDocumentsVC */ = {
 			isa = PBXGroup;
 			children = (
+				8905CE2D22EB6B4B009202FA /* ExtensionSearchMyDocumentsWindowVC.swift */,
+				8905CE2F22EB6B76009202FA /* MyDocumentsWindowVC.swift */,
+				8905CE3122EB6B8D009202FA /* FormsOfDocumentsWindowVC.swift */,
 			);
 			path = MyDocumentsVC;
 			sourceTree = "<group>";
@@ -425,22 +460,29 @@
 				89B950F522D1F3190033F924 /* RegistrationWinWindowVC.swift in Sources */,
 				890E9C2822A5B1EA00CC7BA4 /* ProjectsVC.swift in Sources */,
 				89B9510322D200D70033F924 /* MyDocumentWindowVC.swift in Sources */,
+				8905CE3622EB837B009202FA /* FullTitleOfMyProjectWindowVC.swift in Sources */,
 				890E9C1E22A5B17900CC7BA4 /* MyDocumentsVC.swift in Sources */,
 				890E9C2E22A5B21300CC7BA4 /* ApplicationsVC.swift in Sources */,
 				89ED1C4822E324ED009EB9A4 /* ExtensionSearchSourceCodeWindowVC.swift in Sources */,
 				898A377B22E61E81007A6008 /* ExtensionSearchSpecialistsWindowVC.swift in Sources */,
 				890E9C2422A5B1B000CC7BA4 /* SpecialistsVC.swift in Sources */,
+				8905CE3E22EB945A009202FA /* TeamWindowVC.swift in Sources */,
 				89B950FF22D200AC0033F924 /* AboutMySelfWindowVC.swift in Sources */,
+				8905CE3A22EB9035009202FA /* CompetitionWindowVC.swift in Sources */,
 				89B94D5422E7658C004AF105 /* ExtensionSearchMentorWindowVC.swift in Sources */,
 				890E9C2622A5B1D200CC7BA4 /* InnovatorsVC.swift in Sources */,
 				890E9C2A22A5B1F700CC7BA4 /* CuratorsVC.swift in Sources */,
 				89ED1C4C22E330BE009EB9A4 /* ObjectDesignProjectWindowVC.swift in Sources */,
 				89B950F222D1ED5C0033F924 /* RegistrationWindowVC.swift in Sources */,
 				890E9C1022A5B0F400CC7BA4 /* RegistrationVC.swift in Sources */,
+				8905CE2E22EB6B4B009202FA /* ExtensionSearchMyDocumentsWindowVC.swift in Sources */,
 				890E9C2222A5B1A200CC7BA4 /* ObjectsDesignVC.swift in Sources */,
 				890E9C2C22A5B20300CC7BA4 /* MentorsVC.swift in Sources */,
+				8905CE3C22EB9337009202FA /* AboutTheProjectWindowVC.swift in Sources */,
+				8905CE3222EB6B8D009202FA /* FormsOfDocumentsWindowVC.swift in Sources */,
 				890E9C1822A5B14A00CC7BA4 /* MenuVC.swift in Sources */,
 				8957118522CE4C990058579A /* EntranceWindowVC.swift in Sources */,
+				8905CE3822EB8EB3009202FA /* InfoMyProjectWindowVC.swift in Sources */,
 				89B94D5822E76615004AF105 /* ListCuratorsWindowVC.swift in Sources */,
 				890E9C3222A5B23500CC7BA4 /* CostumFont.swift in Sources */,
 				89ED1C4622E32176009EB9A4 /* SourceCodeProjectWindowVC.swift in Sources */,
@@ -448,8 +490,10 @@
 				89B94D5E22E76D9A004AF105 /* ListsProjectsWindowVC.swift in Sources */,
 				89B950F722D1FBFA0033F924 /* RecoveryPasswordWindowVC.swift in Sources */,
 				89B950FB22D200610033F924 /* ProfileWindowVC.swift in Sources */,
+				8905CE3422EB827F009202FA /* MyProjectListWindowVC.swift in Sources */,
 				89ED1C4E22E330D7009EB9A4 /* ObjectDesignWindowVC.swift in Sources */,
 				89ED1C4422E318F4009EB9A4 /* SourceCodeWindowVC.swift in Sources */,
+				8905CE3022EB6B76009202FA /* MyDocumentsWindowVC.swift in Sources */,
 				8957118622CE4C990058579A /* CustomNavigationBarVC.swift in Sources */,
 				890E9C1622A5B13600CC7BA4 /* RecoveryPasswordWinVC.swift in Sources */,
 				890F36E422A2F7BC00EB1EAE /* AppDelegate.swift in Sources */,
