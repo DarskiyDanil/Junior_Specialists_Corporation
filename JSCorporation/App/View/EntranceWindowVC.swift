@@ -74,7 +74,6 @@ class EntranceWindowVC: UIViewController {
         let txf = UITextField()
         txf.translatesAutoresizingMaskIntoConstraints = false
         txf.placeholder = "Email"
-        txf.font = UIFont.customFont22
         txf.layer.cornerRadius = 5
         txf.borderStyle = UITextField.BorderStyle.roundedRect
         return txf
@@ -84,7 +83,7 @@ class EntranceWindowVC: UIViewController {
         let txf = UITextField()
         txf.translatesAutoresizingMaskIntoConstraints = false
         txf.placeholder = "Пароль"
-        txf.font = UIFont.customFont22
+        txf.isSecureTextEntry = true
         txf.layer.cornerRadius = 5
         txf.borderStyle = UITextField.BorderStyle.roundedRect
         return txf
@@ -117,18 +116,49 @@ class EntranceWindowVC: UIViewController {
     }
     
     //MARK: Methods
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        let checkResult = checkUserDate()
+        if !checkResult {
+            showLoginError()
+        }
+        return checkResult
+    }
+    
+    func checkUserDate() -> Bool {
+        let login = eMailTextField.text!
+        let password = passwordTextField.text!
+        if login == "" && password == "" {
+            let vc = MyProfileVC()
+            vc.modalTransitionStyle = .crossDissolve
+            self.present(vc, animated: true, completion: nil)
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    func showLoginError() {
+        let alter = UIAlertController(title: "Ошибка", message: "Введены не верные данные пользователя", preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alter.addAction(action)
+        present(alter, animated: true, completion: nil)
+    }
     
     //MARK: Objc methods
     @objc func tappedIsBtn(_ sender: UIButton) {
         switch sender.titleLabel?.text {
         case "Войти":
-            let vc = MyProfileVC()
-            self.present(vc, animated: true, completion: nil)
+            let checkResult = checkUserDate()
+            if !checkResult {
+                showLoginError()
+            }
         case "Регистрация":
             let vc = RegistrationVC()
+            vc.modalTransitionStyle = .crossDissolve
             self.present(vc, animated: true, completion: nil)
         case "Забыли пароль?":
             let vc = RecoveryPasswordVC()
+            vc.modalTransitionStyle = .crossDissolve
             self.present(vc, animated: true, completion: nil)
         default:
             break

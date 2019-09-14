@@ -62,6 +62,7 @@ class RegistrationWinVC: UIViewController, UIGestureRecognizerDelegate {
     //MARK: Objc methods
     @objc func tappedIsImg(_ sender: AnyObject) {
         let vc = EntranceVC()
+        vc.modalTransitionStyle = .crossDissolve
         self.present(vc, animated: true, completion: nil)
     }
    

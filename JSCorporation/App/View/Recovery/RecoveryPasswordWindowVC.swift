@@ -95,6 +95,7 @@ class RecoveryPasswordWindowVC: UIViewController {
         case "Отправить письмо":
             print("Письмо отправлено")
             let vc = RecoveryPasswordWinVC()
+            vc.modalTransitionStyle = .crossDissolve
             self.present(vc, animated: true, completion: nil)
         case "Не пришло письмо?":
             print("Письмо не пришло")

@@ -175,18 +175,23 @@ class MenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIGe
             let vc = MentorsVC()
             self.present(vc, animated: true, completion: nil)
         case "Стажировка":
-            print("Стажировка")
+            let vc = InternshipVC()
+            self.present(vc, animated: true, completion: nil)
         case "Заявки":
             let vc = ApplicationsVC()
             self.present(vc, animated: true, completion: nil)
         case "Поддержка":
-            print("Поддержка")
+            let vc = SupportVC()
+            self.present(vc, animated: true, completion: nil)
         case "Контакты":
-            print("Контакты")
+            let vc = ContactsVC()
+            self.present(vc, animated: true, completion: nil)
         case "Web-site":
-            print("Web-site")
+            let vc = WebSiteVC()
+            self.present(vc, animated: true, completion: nil)
         case "Настройки":
-            print("Настройки")
+            let vc = SettingsVC()
+            self.present(vc, animated: true, completion: nil)
         case "Выход":
             let vc = EntranceVC()
             self.present(vc, animated: true, completion: nil)
@@ -319,3 +324,4 @@ class MenuCell: UITableViewCell {
         titleMenu.leadingAnchor.constraint(equalTo: icon.trailingAnchor, constant: 22).isActive = true
     }
 }
+

@@ -190,7 +190,7 @@ class MyProjectVC: UIViewController {
     @objc func tappedIsBtn(_ sender: UIButton) {
         switch sender.titleLabel?.text {
         case "Редактировать проект":
-            let alertController = UIAlertController(title: "Внимание!", message: "Раздел 'Редактирование профиля' находится в разработке.", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Внимание!", message: "Раздел 'Редактирование проекта' находится в разработке.", preferredStyle: .alert)
             let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
             
             alertController.addAction(alertAction)

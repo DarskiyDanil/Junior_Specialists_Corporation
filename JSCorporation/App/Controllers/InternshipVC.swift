@@ -1,16 +1,16 @@
 //
-//  ApplicationsVC.swift
+//  InternshipVC.swift
 //  JSCorporation
 //
-//  Created by Борис Павлов on 03/06/2019.
+//  Created by Борис Павлов on 10/08/2019.
 //  Copyright © 2019 Boris. All rights reserved.
 //
 
 import UIKit
 
-//MARK: Заявки
-class ApplicationsVC: UIViewController {
-   
+//MARK: Стажировка
+class InternshipVC: UIViewController {
+
     //MARK: Properties
     var customNavigationBar: UIViewController!
     var disabledWindow: UIViewController!
@@ -25,7 +25,7 @@ class ApplicationsVC: UIViewController {
     
     //MARK: Methods
     func configCustomInformationView() {
-        
+
         disabledWindow = DisabledWindowVC()
         view.insertSubview(disabledWindow.view, at: 0)
         addChild(disabledWindow)

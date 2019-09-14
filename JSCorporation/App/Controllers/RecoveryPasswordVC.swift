@@ -12,6 +12,7 @@ import UIKit
 class RecoveryPasswordVC: UIViewController, UIGestureRecognizerDelegate {
 
     //MARK: Properties
+    let identifierView = "RecoveryPassword"
     private let logoDog: UIImageView = {
         var img = UIImageView()
         img.translatesAutoresizingMaskIntoConstraints = false
@@ -62,6 +63,7 @@ class RecoveryPasswordVC: UIViewController, UIGestureRecognizerDelegate {
     //MARK: Objc methods
     @objc func tappedIsImg(_ sender: AnyObject) {
         let vc = EntranceVC()
+        vc.modalTransitionStyle = .crossDissolve
         self.present(vc, animated: true, completion: nil)
     }
   

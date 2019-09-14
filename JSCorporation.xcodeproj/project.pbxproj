@@ -39,6 +39,7 @@
 		890F36EB22A2F7BF00EB1EAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 890F36EA22A2F7BF00EB1EAE /* Assets.xcassets */; };
 		890F36EE22A2F7BF00EB1EAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890F36EC22A2F7BF00EB1EAE /* LaunchScreen.storyboard */; };
 		8919EFD422A99D3F001CAD8D /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919EFD322A99D3F001CAD8D /* MenuModel.swift */; };
+		89345770232511F7008E1CE2 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934576F232511F7008E1CE2 /* CustomButton.swift */; };
 		8957118422CE4C990058579A /* ProfileSkillsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957118122CE4C990058579A /* ProfileSkillsVC.swift */; };
 		8957118522CE4C990058579A /* EntranceWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957118222CE4C990058579A /* EntranceWindowVC.swift */; };
 		8957118622CE4C990058579A /* CustomNavigationBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957118322CE4C990058579A /* CustomNavigationBarVC.swift */; };
@@ -67,6 +68,12 @@
 		89ED1C4A22E3309B009EB9A4 /* ExtensionSearchObjectDesignWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ED1C4922E3309B009EB9A4 /* ExtensionSearchObjectDesignWindowVC.swift */; };
 		89ED1C4C22E330BE009EB9A4 /* ObjectDesignProjectWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ED1C4B22E330BE009EB9A4 /* ObjectDesignProjectWindowVC.swift */; };
 		89ED1C4E22E330D7009EB9A4 /* ObjectDesignWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ED1C4D22E330D7009EB9A4 /* ObjectDesignWindowVC.swift */; };
+		89EEDBAD22FDB476002C7E6F /* DisabledWindowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EEDBAC22FDB476002C7E6F /* DisabledWindowVC.swift */; };
+		89EEDBAF22FEDD01002C7E6F /* SupportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EEDBAE22FEDD01002C7E6F /* SupportVC.swift */; };
+		89EEDBB122FEDD22002C7E6F /* ContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EEDBB022FEDD22002C7E6F /* ContactsVC.swift */; };
+		89EEDBB322FEDD34002C7E6F /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EEDBB222FEDD34002C7E6F /* SettingsVC.swift */; };
+		89EEDBB522FEDD76002C7E6F /* WebSiteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EEDBB422FEDD76002C7E6F /* WebSiteVC.swift */; };
+		89EEDBB722FEDDA8002C7E6F /* InternshipVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EEDBB622FEDDA8002C7E6F /* InternshipVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +111,7 @@
 		890F36ED22A2F7BF00EB1EAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		890F36EF22A2F7BF00EB1EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8919EFD322A99D3F001CAD8D /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuModel.swift; path = ../../MenuModel.swift; sourceTree = "<group>"; };
+		8934576F232511F7008E1CE2 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		8957118122CE4C990058579A /* ProfileSkillsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSkillsVC.swift; sourceTree = "<group>"; };
 		8957118222CE4C990058579A /* EntranceWindowVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntranceWindowVC.swift; sourceTree = "<group>"; };
 		8957118322CE4C990058579A /* CustomNavigationBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBarVC.swift; sourceTree = "<group>"; };
@@ -132,6 +140,12 @@
 		89ED1C4922E3309B009EB9A4 /* ExtensionSearchObjectDesignWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionSearchObjectDesignWindowVC.swift; sourceTree = "<group>"; };
 		89ED1C4B22E330BE009EB9A4 /* ObjectDesignProjectWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDesignProjectWindowVC.swift; sourceTree = "<group>"; };
 		89ED1C4D22E330D7009EB9A4 /* ObjectDesignWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDesignWindowVC.swift; sourceTree = "<group>"; };
+		89EEDBAC22FDB476002C7E6F /* DisabledWindowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisabledWindowVC.swift; sourceTree = "<group>"; };
+		89EEDBAE22FEDD01002C7E6F /* SupportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportVC.swift; sourceTree = "<group>"; };
+		89EEDBB022FEDD22002C7E6F /* ContactsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsVC.swift; sourceTree = "<group>"; };
+		89EEDBB222FEDD34002C7E6F /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		89EEDBB422FEDD76002C7E6F /* WebSiteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSiteVC.swift; sourceTree = "<group>"; };
+		89EEDBB622FEDDA8002C7E6F /* InternshipVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternshipVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +191,12 @@
 				890E9C2722A5B1EA00CC7BA4 /* ProjectsVC.swift */,
 				890E9C2922A5B1F700CC7BA4 /* CuratorsVC.swift */,
 				890E9C2B22A5B20300CC7BA4 /* MentorsVC.swift */,
+				89EEDBB622FEDDA8002C7E6F /* InternshipVC.swift */,
 				890E9C2D22A5B21300CC7BA4 /* ApplicationsVC.swift */,
+				89EEDBAE22FEDD01002C7E6F /* SupportVC.swift */,
+				89EEDBB022FEDD22002C7E6F /* ContactsVC.swift */,
+				89EEDBB422FEDD76002C7E6F /* WebSiteVC.swift */,
+				89EEDBB222FEDD34002C7E6F /* SettingsVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -187,6 +206,7 @@
 			children = (
 				890E9C2F22A5B22800CC7BA4 /* CostumColor.swift */,
 				890E9C3122A5B23500CC7BA4 /* CostumFont.swift */,
+				8934576F232511F7008E1CE2 /* CustomButton.swift */,
 				890F36EA22A2F7BF00EB1EAE /* Assets.xcassets */,
 				890F36EC22A2F7BF00EB1EAE /* LaunchScreen.storyboard */,
 			);
@@ -244,6 +264,7 @@
 			children = (
 				8957118322CE4C990058579A /* CustomNavigationBarVC.swift */,
 				8957118222CE4C990058579A /* EntranceWindowVC.swift */,
+				89EEDBAC22FDB476002C7E6F /* DisabledWindowVC.swift */,
 				89B950F022D1ED1F0033F924 /* Registration */,
 				89B950F322D1ED6C0033F924 /* Recovery */,
 				89B950EF22D1ED030033F924 /* MyProfileVC */,
@@ -469,8 +490,10 @@
 				8905CE3E22EB945A009202FA /* TeamWindowVC.swift in Sources */,
 				89B950FF22D200AC0033F924 /* AboutMySelfWindowVC.swift in Sources */,
 				8905CE3A22EB9035009202FA /* CompetitionWindowVC.swift in Sources */,
+				89EEDBAD22FDB476002C7E6F /* DisabledWindowVC.swift in Sources */,
 				89B94D5422E7658C004AF105 /* ExtensionSearchMentorWindowVC.swift in Sources */,
 				890E9C2622A5B1D200CC7BA4 /* InnovatorsVC.swift in Sources */,
+				89EEDBB122FEDD22002C7E6F /* ContactsVC.swift in Sources */,
 				890E9C2A22A5B1F700CC7BA4 /* CuratorsVC.swift in Sources */,
 				89ED1C4C22E330BE009EB9A4 /* ObjectDesignProjectWindowVC.swift in Sources */,
 				89B950F222D1ED5C0033F924 /* RegistrationWindowVC.swift in Sources */,
@@ -481,14 +504,18 @@
 				8905CE3C22EB9337009202FA /* AboutTheProjectWindowVC.swift in Sources */,
 				8905CE3222EB6B8D009202FA /* FormsOfDocumentsWindowVC.swift in Sources */,
 				890E9C1822A5B14A00CC7BA4 /* MenuVC.swift in Sources */,
+				89EEDBB522FEDD76002C7E6F /* WebSiteVC.swift in Sources */,
 				8957118522CE4C990058579A /* EntranceWindowVC.swift in Sources */,
+				89EEDBAF22FEDD01002C7E6F /* SupportVC.swift in Sources */,
 				8905CE3822EB8EB3009202FA /* InfoMyProjectWindowVC.swift in Sources */,
 				89B94D5822E76615004AF105 /* ListCuratorsWindowVC.swift in Sources */,
 				890E9C3222A5B23500CC7BA4 /* CostumFont.swift in Sources */,
 				89ED1C4622E32176009EB9A4 /* SourceCodeProjectWindowVC.swift in Sources */,
+				89345770232511F7008E1CE2 /* CustomButton.swift in Sources */,
 				890E9C1A22A5B15600CC7BA4 /* MyProfileVC.swift in Sources */,
 				89B94D5E22E76D9A004AF105 /* ListsProjectsWindowVC.swift in Sources */,
 				89B950F722D1FBFA0033F924 /* RecoveryPasswordWindowVC.swift in Sources */,
+				89EEDBB722FEDDA8002C7E6F /* InternshipVC.swift in Sources */,
 				89B950FB22D200610033F924 /* ProfileWindowVC.swift in Sources */,
 				8905CE3422EB827F009202FA /* MyProjectListWindowVC.swift in Sources */,
 				89ED1C4E22E330D7009EB9A4 /* ObjectDesignWindowVC.swift in Sources */,
@@ -497,6 +524,7 @@
 				8957118622CE4C990058579A /* CustomNavigationBarVC.swift in Sources */,
 				890E9C1622A5B13600CC7BA4 /* RecoveryPasswordWinVC.swift in Sources */,
 				890F36E422A2F7BC00EB1EAE /* AppDelegate.swift in Sources */,
+				89EEDBB322FEDD34002C7E6F /* SettingsVC.swift in Sources */,
 				89B94D5022E76555004AF105 /* ExtensionSearchInnovatorWindowVC.swift in Sources */,
 				8919EFD422A99D3F001CAD8D /* MenuModel.swift in Sources */,
 				890E9C3022A5B22800CC7BA4 /* CostumColor.swift in Sources */,

@@ -98,6 +98,7 @@ class MyDocumentWindowVC: UIViewController, UITableViewDelegate, UITableViewData
     //MARK: Objc Methods
     @objc func searchInDocument() {
         let vc = MyDocumentsVC()
+        vc.modalTransitionStyle = .crossDissolve
         self.present(vc, animated: true, completion: nil)
     }
     

@@ -106,6 +106,7 @@ class RecoveryPasswordWinWindowVC: UIViewController {
         case "Изменить пароль":
             print("Пароль изменен")
             let vc = MyProfileVC()
+            vc.modalTransitionStyle = .crossDissolve
             self.present(vc, animated: true, completion: nil)
         case "Поддержка":
             print("Поддержка")

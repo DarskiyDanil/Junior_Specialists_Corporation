@@ -113,6 +113,7 @@ class MyProjectWindowVC: UIViewController, UITableViewDelegate, UITableViewDataS
     //MARK: Objc Methods
     @objc func searchInProject() {
         let vc = MyProjectVC()
+        vc.modalTransitionStyle = .crossDissolve
         self.present(vc, animated: true, completion: nil)
     }
     

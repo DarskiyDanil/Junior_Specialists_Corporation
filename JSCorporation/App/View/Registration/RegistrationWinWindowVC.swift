@@ -95,9 +95,11 @@ class RegistrationWinWindowVC: UIViewController {
         switch sender.titleLabel?.text {
         case "Войти в личный кабинет":
             let vc = MyProfileVC()
+            vc.modalTransitionStyle = .crossDissolve
             self.present(vc, animated: true, completion: nil)
         case "Вернуться на главную":
             let vc = EntranceVC()
+            vc.modalTransitionStyle = .crossDissolve
             self.present(vc, animated: true, completion: nil)
         default:
             break

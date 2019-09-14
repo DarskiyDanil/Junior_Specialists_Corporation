@@ -52,6 +52,7 @@ class RegistrationVC: UIViewController, UIGestureRecognizerDelegate {
     //MARK: Objc methods
     @objc func tappedIsImg(_ sender: AnyObject) {
         let vc = EntranceVC()
+        vc.modalTransitionStyle = .crossDissolve
         self.present(vc, animated: true, completion: nil)
     }
 
@@ -62,6 +63,5 @@ class RegistrationVC: UIViewController, UIGestureRecognizerDelegate {
         self.logoJSGrey.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -5).isActive = true
         self.logoJSGrey.widthAnchor.constraint(equalToConstant: 200).isActive = true
         self.logoJSGrey.heightAnchor.constraint(equalToConstant: 100).isActive = true
-       
     }
 }

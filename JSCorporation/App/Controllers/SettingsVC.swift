@@ -1,16 +1,16 @@
 //
-//  ApplicationsVC.swift
+//  SettingsVC.swift
 //  JSCorporation
 //
-//  Created by Борис Павлов on 03/06/2019.
+//  Created by Борис Павлов on 10/08/2019.
 //  Copyright © 2019 Boris. All rights reserved.
 //
 
 import UIKit
 
-//MARK: Заявки
-class ApplicationsVC: UIViewController {
-   
+//MARK: Настройки
+class SettingsVC: UIViewController {
+
     //MARK: Properties
     var customNavigationBar: UIViewController!
     var disabledWindow: UIViewController!
